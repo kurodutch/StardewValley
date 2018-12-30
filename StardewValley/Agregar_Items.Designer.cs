@@ -123,6 +123,7 @@
             this.Controls.Add(this.lbl_Item);
             this.Name = "Agregar_Items";
             this.Text = "Agregar_Items";
+            this.Load += new System.EventHandler(this.Agregar_Items_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbox_Imagen)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

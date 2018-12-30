@@ -11,6 +11,6 @@ C:\Users\JP_51\Desktop\StardewValley\StardewValley\bin\Debug\StardewValley.mdf
 C:\Users\JP_51\Desktop\StardewValley\StardewValley\bin\Debug\StardewValley_log.ldf
 C:\Users\JP_51\Desktop\StardewValley\StardewValley\bin\Debug\System.Data.SqlServerCe.dll
 C:\Users\JP_51\Desktop\StardewValley\StardewValley\obj\Debug\StardewValley.csproj.CopyComplete
-C:\Users\JP_51\Desktop\StardewValley\StardewValley\obj\Debug\StardewValley.Menu.resources
 C:\Users\JP_51\Desktop\StardewValley\StardewValley\obj\Debug\StardewValley.Ver_Items.resources
 C:\Users\JP_51\Desktop\StardewValley\StardewValley\obj\Debug\StardewValley.Agregar_Items.resources
+C:\Users\JP_51\Desktop\StardewValley\StardewValley\obj\Debug\StardewValley.Menu_Principal.resources
