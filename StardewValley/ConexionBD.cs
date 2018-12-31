@@ -14,6 +14,7 @@ namespace StardewValley
 
         //DESKTOP-0K1GA54
         //DESKTOP-0K1GA54\SQLEXPRESS
+
         public SqlConnection conexion = new SqlConnection();
 
         public ConexionBD ()

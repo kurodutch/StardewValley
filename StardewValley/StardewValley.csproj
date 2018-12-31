@@ -53,6 +53,7 @@
     <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.SqlServer.Compact.4.0.8876.1\lib\net40\System.Data.SqlServerCe.dll</HintPath>
     </Reference>
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -64,6 +65,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Agregar_Habitantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agregar_Habitantes.Designer.cs">
+      <DependentUpon>Agregar_Habitantes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Agregar_Items.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +92,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Agregar_Habitantes.resx">
+      <DependentUpon>Agregar_Habitantes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Agregar_Items.resx">
       <DependentUpon>Agregar_Items.cs</DependentUpon>
     </EmbeddedResource>

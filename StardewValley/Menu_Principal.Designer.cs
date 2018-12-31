@@ -91,13 +91,14 @@
             // Agregar_Habitantes
             // 
             this.Agregar_Habitantes.Name = "Agregar_Habitantes";
-            this.Agregar_Habitantes.Size = new System.Drawing.Size(176, 22);
+            this.Agregar_Habitantes.Size = new System.Drawing.Size(180, 22);
             this.Agregar_Habitantes.Text = "Agregar Habitantes";
+            this.Agregar_Habitantes.Click += new System.EventHandler(this.Agregar_Habitantes_Click);
             // 
             // Ver_Habitantes
             // 
             this.Ver_Habitantes.Name = "Ver_Habitantes";
-            this.Ver_Habitantes.Size = new System.Drawing.Size(176, 22);
+            this.Ver_Habitantes.Size = new System.Drawing.Size(180, 22);
             this.Ver_Habitantes.Text = "Ver Habitantes";
             this.Ver_Habitantes.Click += new System.EventHandler(this.toolStripMenuItem1_Click_1);
             // 

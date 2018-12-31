@@ -120,7 +120,7 @@ namespace StardewValley
             Ver_Items ver_items = new Ver_Items();
             ver_items.Show();
             //Ver_Items
-            MessageBox.Show("PEAZO E LONGI");
+            //MessageBox.Show("PEAZO E LONGI");
         }
 
         private void Agregar_Items_Click(object sender, EventArgs e)
@@ -134,12 +134,27 @@ namespace StardewValley
 
         private void btn_Destino_Click(object sender, EventArgs e)
         {
-            //FolderBrowserDialog fbd2 = new FolderBrowserDialog();
-            //var resultado = fbd2.ShowDialog();
+            //FolderBrowserDialog fbd1 = new FolderBrowserDialog();
+            //var resultado = fbd1.ShowDialog();
             //if (resultado == DialogResult.OK)
+            //{
+            //    txt_1.Text = fbd1.SelectedPath;
+            //}
+
+
+            //FolderBrowserDialog fbd2 = new FolderBrowserDialog();
+            //var resultado2 = fbd2.ShowDialog();
+            //if (resultado2 == DialogResult.OK)
             //{
             //    txt_2.Text = fbd2.SelectedPath + txt_1.Text.Substring(txt_1.Text.LastIndexOf(@"\"));
             //}
+            //MessageBox.Show(txt_1.Text.Substring(txt_1.Text.LastIndexOf(@"\")));
+        }
+
+        private void Agregar_Habitantes_Click(object sender, EventArgs e)
+        {
+            Agregar_Habitantes agregar_habitantes = new Agregar_Habitantes();
+            agregar_habitantes.Show();
         }
         // C:\Users\JP_51\Documents
 
