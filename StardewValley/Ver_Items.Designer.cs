@@ -28,277 +28,95 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txt_Item01 = new System.Windows.Forms.TextBox();
-            this.txt_Item02 = new System.Windows.Forms.TextBox();
-            this.txt_Item03 = new System.Windows.Forms.TextBox();
-            this.pbox_Item01 = new System.Windows.Forms.PictureBox();
-            this.pbox_Item02 = new System.Windows.Forms.PictureBox();
-            this.pbox_Item03 = new System.Windows.Forms.PictureBox();
-            this.pbox_Item04 = new System.Windows.Forms.PictureBox();
-            this.txt_Item04 = new System.Windows.Forms.TextBox();
-            this.txt_Item05 = new System.Windows.Forms.TextBox();
-            this.pbox_Item05 = new System.Windows.Forms.PictureBox();
-            this.pbox_Item06 = new System.Windows.Forms.PictureBox();
-            this.txt_Item06 = new System.Windows.Forms.TextBox();
-            this.txt_Item07 = new System.Windows.Forms.TextBox();
-            this.pbox_Item07 = new System.Windows.Forms.PictureBox();
-            this.pbox_Item08 = new System.Windows.Forms.PictureBox();
-            this.pbox_Item09 = new System.Windows.Forms.PictureBox();
-            this.txt_Item08 = new System.Windows.Forms.TextBox();
-            this.txt_Item09 = new System.Windows.Forms.TextBox();
-            this.txt_Item10 = new System.Windows.Forms.TextBox();
-            this.pbox_Item10 = new System.Windows.Forms.PictureBox();
-            this.pbox_Item11 = new System.Windows.Forms.PictureBox();
-            this.pbox_Item12 = new System.Windows.Forms.PictureBox();
-            this.pbox_Item13 = new System.Windows.Forms.PictureBox();
-            this.txt_Item11 = new System.Windows.Forms.TextBox();
-            this.txt_Item12 = new System.Windows.Forms.TextBox();
-            this.txt_Item13 = new System.Windows.Forms.TextBox();
-            this.txt_Item14 = new System.Windows.Forms.TextBox();
-            this.txt_Item15 = new System.Windows.Forms.TextBox();
-            this.pbox_Item14 = new System.Windows.Forms.PictureBox();
-            this.pbox_Item15 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_Item01)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_Item02)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_Item03)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_Item04)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_Item05)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_Item06)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_Item07)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_Item08)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_Item09)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_Item10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_Item11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_Item12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_Item13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_Item14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_Item15)).BeginInit();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.txt_Filtro = new System.Windows.Forms.TextBox();
+            this.btn_siguiente = new System.Windows.Forms.Button();
+            this.btn_atrás = new System.Windows.Forms.Button();
+            this.pbox_Filtrar = new System.Windows.Forms.PictureBox();
+            this.cmbox_Filtrar = new System.Windows.Forms.ComboBox();
+            this.txt_Filtrar = new System.Windows.Forms.TextBox();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox_Filtrar)).BeginInit();
             this.SuspendLayout();
             // 
-            // txt_Item01
+            // panel1
             // 
-            this.txt_Item01.Location = new System.Drawing.Point(27, 227);
-            this.txt_Item01.Name = "txt_Item01";
-            this.txt_Item01.Size = new System.Drawing.Size(271, 20);
-            this.txt_Item01.TabIndex = 2;
+            this.panel1.Location = new System.Drawing.Point(2, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(560, 481);
+            this.panel1.TabIndex = 32;
             // 
-            // txt_Item02
+            // panel2
             // 
-            this.txt_Item02.Location = new System.Drawing.Point(27, 288);
-            this.txt_Item02.Name = "txt_Item02";
-            this.txt_Item02.Size = new System.Drawing.Size(271, 20);
-            this.txt_Item02.TabIndex = 3;
+            this.panel2.Controls.Add(this.txt_Filtro);
+            this.panel2.Controls.Add(this.btn_siguiente);
+            this.panel2.Controls.Add(this.btn_atrás);
+            this.panel2.Controls.Add(this.pbox_Filtrar);
+            this.panel2.Controls.Add(this.cmbox_Filtrar);
+            this.panel2.Controls.Add(this.txt_Filtrar);
+            this.panel2.Location = new System.Drawing.Point(2, 602);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(554, 266);
+            this.panel2.TabIndex = 33;
             // 
-            // txt_Item03
+            // txt_Filtro
             // 
-            this.txt_Item03.Location = new System.Drawing.Point(27, 339);
-            this.txt_Item03.Name = "txt_Item03";
-            this.txt_Item03.Size = new System.Drawing.Size(271, 20);
-            this.txt_Item03.TabIndex = 4;
+            this.txt_Filtro.Location = new System.Drawing.Point(306, 80);
+            this.txt_Filtro.Name = "txt_Filtro";
+            this.txt_Filtro.Size = new System.Drawing.Size(154, 20);
+            this.txt_Filtro.TabIndex = 5;
+            this.txt_Filtro.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txt_Filtro_MouseClick);
+            this.txt_Filtro.TextChanged += new System.EventHandler(this.txt_Filtro_TextChanged);
+            this.txt_Filtro.Enter += new System.EventHandler(this.txt_Filtro_Enter);
+            this.txt_Filtro.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_Filtro_KeyDown);
+            this.txt_Filtro.Leave += new System.EventHandler(this.txt_Filtro_Leave);
             // 
-            // pbox_Item01
+            // btn_siguiente
             // 
-            this.pbox_Item01.Location = new System.Drawing.Point(359, 227);
-            this.pbox_Item01.Name = "pbox_Item01";
-            this.pbox_Item01.Size = new System.Drawing.Size(52, 44);
-            this.pbox_Item01.TabIndex = 5;
-            this.pbox_Item01.TabStop = false;
+            this.btn_siguiente.Image = global::StardewValley.Properties.Resources.flecha_derecha;
+            this.btn_siguiente.Location = new System.Drawing.Point(307, 182);
+            this.btn_siguiente.Name = "btn_siguiente";
+            this.btn_siguiente.Size = new System.Drawing.Size(100, 49);
+            this.btn_siguiente.TabIndex = 4;
+            this.btn_siguiente.Text = "Siguiente";
+            this.btn_siguiente.UseVisualStyleBackColor = true;
+            this.btn_siguiente.Click += new System.EventHandler(this.btn_siguiente_Click);
+            this.btn_siguiente.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btn_siguiente_KeyDown);
             // 
-            // pbox_Item02
+            // btn_atrás
             // 
-            this.pbox_Item02.Location = new System.Drawing.Point(359, 288);
-            this.pbox_Item02.Name = "pbox_Item02";
-            this.pbox_Item02.Size = new System.Drawing.Size(52, 45);
-            this.pbox_Item02.TabIndex = 6;
-            this.pbox_Item02.TabStop = false;
+            this.btn_atrás.Location = new System.Drawing.Point(112, 182);
+            this.btn_atrás.Name = "btn_atrás";
+            this.btn_atrás.Size = new System.Drawing.Size(100, 49);
+            this.btn_atrás.TabIndex = 3;
+            this.btn_atrás.Text = "Atrás";
+            this.btn_atrás.UseVisualStyleBackColor = true;
+            this.btn_atrás.Click += new System.EventHandler(this.btn_atrás_Click);
             // 
-            // pbox_Item03
+            // pbox_Filtrar
             // 
-            this.pbox_Item03.Location = new System.Drawing.Point(359, 339);
-            this.pbox_Item03.Name = "pbox_Item03";
-            this.pbox_Item03.Size = new System.Drawing.Size(52, 38);
-            this.pbox_Item03.TabIndex = 7;
-            this.pbox_Item03.TabStop = false;
+            this.pbox_Filtrar.Location = new System.Drawing.Point(99, 68);
+            this.pbox_Filtrar.Name = "pbox_Filtrar";
+            this.pbox_Filtrar.Size = new System.Drawing.Size(102, 68);
+            this.pbox_Filtrar.TabIndex = 2;
+            this.pbox_Filtrar.TabStop = false;
             // 
-            // pbox_Item04
+            // cmbox_Filtrar
             // 
-            this.pbox_Item04.Location = new System.Drawing.Point(359, 396);
-            this.pbox_Item04.Name = "pbox_Item04";
-            this.pbox_Item04.Size = new System.Drawing.Size(52, 33);
-            this.pbox_Item04.TabIndex = 8;
-            this.pbox_Item04.TabStop = false;
+            this.cmbox_Filtrar.FormattingEnabled = true;
+            this.cmbox_Filtrar.Location = new System.Drawing.Point(307, 21);
+            this.cmbox_Filtrar.Name = "cmbox_Filtrar";
+            this.cmbox_Filtrar.Size = new System.Drawing.Size(154, 21);
+            this.cmbox_Filtrar.TabIndex = 1;
+            this.cmbox_Filtrar.SelectedIndexChanged += new System.EventHandler(this.cmbox_Filtrar_SelectedIndexChanged);
             // 
-            // txt_Item04
+            // txt_Filtrar
             // 
-            this.txt_Item04.Location = new System.Drawing.Point(28, 396);
-            this.txt_Item04.Name = "txt_Item04";
-            this.txt_Item04.Size = new System.Drawing.Size(270, 20);
-            this.txt_Item04.TabIndex = 9;
-            // 
-            // txt_Item05
-            // 
-            this.txt_Item05.Location = new System.Drawing.Point(28, 456);
-            this.txt_Item05.Name = "txt_Item05";
-            this.txt_Item05.Size = new System.Drawing.Size(279, 20);
-            this.txt_Item05.TabIndex = 10;
-            // 
-            // pbox_Item05
-            // 
-            this.pbox_Item05.Location = new System.Drawing.Point(359, 443);
-            this.pbox_Item05.Name = "pbox_Item05";
-            this.pbox_Item05.Size = new System.Drawing.Size(52, 33);
-            this.pbox_Item05.TabIndex = 11;
-            this.pbox_Item05.TabStop = false;
-            // 
-            // pbox_Item06
-            // 
-            this.pbox_Item06.Location = new System.Drawing.Point(359, 505);
-            this.pbox_Item06.Name = "pbox_Item06";
-            this.pbox_Item06.Size = new System.Drawing.Size(52, 33);
-            this.pbox_Item06.TabIndex = 12;
-            this.pbox_Item06.TabStop = false;
-            // 
-            // txt_Item06
-            // 
-            this.txt_Item06.Location = new System.Drawing.Point(27, 505);
-            this.txt_Item06.Name = "txt_Item06";
-            this.txt_Item06.Size = new System.Drawing.Size(279, 20);
-            this.txt_Item06.TabIndex = 13;
-            // 
-            // txt_Item07
-            // 
-            this.txt_Item07.Location = new System.Drawing.Point(28, 562);
-            this.txt_Item07.Name = "txt_Item07";
-            this.txt_Item07.Size = new System.Drawing.Size(279, 20);
-            this.txt_Item07.TabIndex = 14;
-            // 
-            // pbox_Item07
-            // 
-            this.pbox_Item07.Location = new System.Drawing.Point(359, 562);
-            this.pbox_Item07.Name = "pbox_Item07";
-            this.pbox_Item07.Size = new System.Drawing.Size(52, 33);
-            this.pbox_Item07.TabIndex = 15;
-            this.pbox_Item07.TabStop = false;
-            // 
-            // pbox_Item08
-            // 
-            this.pbox_Item08.Location = new System.Drawing.Point(359, 601);
-            this.pbox_Item08.Name = "pbox_Item08";
-            this.pbox_Item08.Size = new System.Drawing.Size(52, 33);
-            this.pbox_Item08.TabIndex = 16;
-            this.pbox_Item08.TabStop = false;
-            // 
-            // pbox_Item09
-            // 
-            this.pbox_Item09.Location = new System.Drawing.Point(359, 655);
-            this.pbox_Item09.Name = "pbox_Item09";
-            this.pbox_Item09.Size = new System.Drawing.Size(52, 33);
-            this.pbox_Item09.TabIndex = 17;
-            this.pbox_Item09.TabStop = false;
-            // 
-            // txt_Item08
-            // 
-            this.txt_Item08.Location = new System.Drawing.Point(27, 602);
-            this.txt_Item08.Name = "txt_Item08";
-            this.txt_Item08.Size = new System.Drawing.Size(279, 20);
-            this.txt_Item08.TabIndex = 18;
-            // 
-            // txt_Item09
-            // 
-            this.txt_Item09.Location = new System.Drawing.Point(28, 655);
-            this.txt_Item09.Name = "txt_Item09";
-            this.txt_Item09.Size = new System.Drawing.Size(279, 20);
-            this.txt_Item09.TabIndex = 19;
-            // 
-            // txt_Item10
-            // 
-            this.txt_Item10.Location = new System.Drawing.Point(27, 702);
-            this.txt_Item10.Name = "txt_Item10";
-            this.txt_Item10.Size = new System.Drawing.Size(279, 20);
-            this.txt_Item10.TabIndex = 20;
-            // 
-            // pbox_Item10
-            // 
-            this.pbox_Item10.Location = new System.Drawing.Point(359, 702);
-            this.pbox_Item10.Name = "pbox_Item10";
-            this.pbox_Item10.Size = new System.Drawing.Size(52, 33);
-            this.pbox_Item10.TabIndex = 21;
-            this.pbox_Item10.TabStop = false;
-            // 
-            // pbox_Item11
-            // 
-            this.pbox_Item11.Location = new System.Drawing.Point(359, 741);
-            this.pbox_Item11.Name = "pbox_Item11";
-            this.pbox_Item11.Size = new System.Drawing.Size(52, 33);
-            this.pbox_Item11.TabIndex = 22;
-            this.pbox_Item11.TabStop = false;
-            // 
-            // pbox_Item12
-            // 
-            this.pbox_Item12.Location = new System.Drawing.Point(359, 794);
-            this.pbox_Item12.Name = "pbox_Item12";
-            this.pbox_Item12.Size = new System.Drawing.Size(52, 33);
-            this.pbox_Item12.TabIndex = 23;
-            this.pbox_Item12.TabStop = false;
-            // 
-            // pbox_Item13
-            // 
-            this.pbox_Item13.Location = new System.Drawing.Point(359, 860);
-            this.pbox_Item13.Name = "pbox_Item13";
-            this.pbox_Item13.Size = new System.Drawing.Size(52, 33);
-            this.pbox_Item13.TabIndex = 24;
-            this.pbox_Item13.TabStop = false;
-            // 
-            // txt_Item11
-            // 
-            this.txt_Item11.Location = new System.Drawing.Point(27, 754);
-            this.txt_Item11.Name = "txt_Item11";
-            this.txt_Item11.Size = new System.Drawing.Size(279, 20);
-            this.txt_Item11.TabIndex = 25;
-            // 
-            // txt_Item12
-            // 
-            this.txt_Item12.Location = new System.Drawing.Point(27, 807);
-            this.txt_Item12.Name = "txt_Item12";
-            this.txt_Item12.Size = new System.Drawing.Size(279, 20);
-            this.txt_Item12.TabIndex = 26;
-            // 
-            // txt_Item13
-            // 
-            this.txt_Item13.Location = new System.Drawing.Point(19, 873);
-            this.txt_Item13.Name = "txt_Item13";
-            this.txt_Item13.Size = new System.Drawing.Size(279, 20);
-            this.txt_Item13.TabIndex = 27;
-            // 
-            // txt_Item14
-            // 
-            this.txt_Item14.Location = new System.Drawing.Point(19, 911);
-            this.txt_Item14.Name = "txt_Item14";
-            this.txt_Item14.Size = new System.Drawing.Size(279, 20);
-            this.txt_Item14.TabIndex = 28;
-            // 
-            // txt_Item15
-            // 
-            this.txt_Item15.Location = new System.Drawing.Point(19, 965);
-            this.txt_Item15.Name = "txt_Item15";
-            this.txt_Item15.Size = new System.Drawing.Size(279, 20);
-            this.txt_Item15.TabIndex = 29;
-            // 
-            // pbox_Item14
-            // 
-            this.pbox_Item14.Location = new System.Drawing.Point(359, 899);
-            this.pbox_Item14.Name = "pbox_Item14";
-            this.pbox_Item14.Size = new System.Drawing.Size(52, 33);
-            this.pbox_Item14.TabIndex = 30;
-            this.pbox_Item14.TabStop = false;
-            // 
-            // pbox_Item15
-            // 
-            this.pbox_Item15.Location = new System.Drawing.Point(359, 953);
-            this.pbox_Item15.Name = "pbox_Item15";
-            this.pbox_Item15.Size = new System.Drawing.Size(52, 41);
-            this.pbox_Item15.TabIndex = 31;
-            this.pbox_Item15.TabStop = false;
+            this.txt_Filtrar.Location = new System.Drawing.Point(91, 17);
+            this.txt_Filtrar.Name = "txt_Filtrar";
+            this.txt_Filtrar.Size = new System.Drawing.Size(156, 20);
+            this.txt_Filtrar.TabIndex = 0;
             // 
             // Ver_Items
             // 
@@ -306,89 +124,26 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(557, 1026);
-            this.Controls.Add(this.pbox_Item15);
-            this.Controls.Add(this.pbox_Item14);
-            this.Controls.Add(this.txt_Item15);
-            this.Controls.Add(this.txt_Item14);
-            this.Controls.Add(this.txt_Item13);
-            this.Controls.Add(this.txt_Item12);
-            this.Controls.Add(this.txt_Item11);
-            this.Controls.Add(this.pbox_Item13);
-            this.Controls.Add(this.pbox_Item12);
-            this.Controls.Add(this.pbox_Item11);
-            this.Controls.Add(this.pbox_Item10);
-            this.Controls.Add(this.txt_Item10);
-            this.Controls.Add(this.txt_Item09);
-            this.Controls.Add(this.txt_Item08);
-            this.Controls.Add(this.pbox_Item09);
-            this.Controls.Add(this.pbox_Item08);
-            this.Controls.Add(this.pbox_Item07);
-            this.Controls.Add(this.txt_Item07);
-            this.Controls.Add(this.txt_Item06);
-            this.Controls.Add(this.pbox_Item06);
-            this.Controls.Add(this.pbox_Item05);
-            this.Controls.Add(this.txt_Item05);
-            this.Controls.Add(this.txt_Item04);
-            this.Controls.Add(this.pbox_Item04);
-            this.Controls.Add(this.pbox_Item03);
-            this.Controls.Add(this.pbox_Item02);
-            this.Controls.Add(this.pbox_Item01);
-            this.Controls.Add(this.txt_Item03);
-            this.Controls.Add(this.txt_Item02);
-            this.Controls.Add(this.txt_Item01);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Name = "Ver_Items";
             this.Text = "Ver Items";
             this.Load += new System.EventHandler(this.Ver_Items_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_Item01)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_Item02)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_Item03)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_Item04)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_Item05)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_Item06)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_Item07)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_Item08)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_Item09)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_Item10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_Item11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_Item12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_Item13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_Item14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_Item15)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox_Filtrar)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox txt_Item01;
-        private System.Windows.Forms.TextBox txt_Item02;
-        private System.Windows.Forms.TextBox txt_Item03;
-        private System.Windows.Forms.PictureBox pbox_Item01;
-        private System.Windows.Forms.PictureBox pbox_Item02;
-        private System.Windows.Forms.PictureBox pbox_Item03;
-        private System.Windows.Forms.PictureBox pbox_Item04;
-        private System.Windows.Forms.TextBox txt_Item04;
-        private System.Windows.Forms.TextBox txt_Item05;
-        private System.Windows.Forms.PictureBox pbox_Item05;
-        private System.Windows.Forms.PictureBox pbox_Item06;
-        private System.Windows.Forms.TextBox txt_Item06;
-        private System.Windows.Forms.TextBox txt_Item07;
-        private System.Windows.Forms.PictureBox pbox_Item07;
-        private System.Windows.Forms.PictureBox pbox_Item08;
-        private System.Windows.Forms.PictureBox pbox_Item09;
-        private System.Windows.Forms.TextBox txt_Item08;
-        private System.Windows.Forms.TextBox txt_Item09;
-        private System.Windows.Forms.TextBox txt_Item10;
-        private System.Windows.Forms.PictureBox pbox_Item10;
-        private System.Windows.Forms.PictureBox pbox_Item11;
-        private System.Windows.Forms.PictureBox pbox_Item12;
-        private System.Windows.Forms.PictureBox pbox_Item13;
-        private System.Windows.Forms.TextBox txt_Item11;
-        private System.Windows.Forms.TextBox txt_Item12;
-        private System.Windows.Forms.TextBox txt_Item13;
-        private System.Windows.Forms.TextBox txt_Item14;
-        private System.Windows.Forms.TextBox txt_Item15;
-        private System.Windows.Forms.PictureBox pbox_Item14;
-        private System.Windows.Forms.PictureBox pbox_Item15;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TextBox txt_Filtrar;
+        private System.Windows.Forms.ComboBox cmbox_Filtrar;
+        private System.Windows.Forms.PictureBox pbox_Filtrar;
+        private System.Windows.Forms.Button btn_siguiente;
+        private System.Windows.Forms.Button btn_atrás;
+        private System.Windows.Forms.TextBox txt_Filtro;
     }
 }

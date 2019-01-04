@@ -29,7 +29,7 @@ namespace StardewValley
         {
             OpenFileDialog BuscarImagen = new OpenFileDialog();
             BuscarImagen.Filter = "Archivos de Imagen(*.bmp; *.gif; *.jpg; *.png;)| *.bmp; *.gif; *.jpg; *.png; | Todos los Archivos (*.*)|*.*";
-            BuscarImagen.InitialDirectory = @"C:\";
+            BuscarImagen.InitialDirectory = @"C:\Users\JP_51\Desktop\Imagenes_StardewValley";
             if (BuscarImagen.ShowDialog() == DialogResult.OK)
             {
                 try
@@ -61,6 +61,12 @@ namespace StardewValley
             if (txt_Item.Text == "")
             {
                 MessageBox.Show("Debe ingresar un nombre para el Item");
+                sw = false;
+            }
+            
+            if (pbox_Imagen.Image == null)
+            {
+                MessageBox.Show("Debe ingresar una imagen antes de guardar.");
                 sw = false;
             }
 
@@ -95,9 +101,9 @@ namespace StardewValley
                     SqlCommand comandoInsert = new SqlCommand(rutaInsert, cn.conexion);
                     comandoInsert.Parameters.AddWithValue("@Nombre_Item", txt_Item.Text.ToString());
                     //comandoInsert.Parameters.AddWithValue("@Imagen_Item", txt_Ruta.Text.ToString());
-                    comandoInsert.Parameters.AddWithValue("@Imagen_Item", @"C:\Users\JP_51\Documents\StardewValley\Items\" + txt_Item.Text.ToString() + ".jpg");
+                    comandoInsert.Parameters.AddWithValue("@Imagen_Item", @"C:\Users\JP_51\Documents\StardewValley\Items\" + txt_Item.Text.ToString() + ".png");
                     comandoInsert.ExecuteNonQuery();
-                    pbox_Imagen.Load(@"C:\Users\JP_51\Pictures\Katatonia.jpg");
+                    pbox_Imagen.Image = null;
                 }
                 catch (Exception ex)
                 {
@@ -106,8 +112,8 @@ namespace StardewValley
 
 
                 //COPIAR LA IMAGEN A LA CARPETA DEL SV//
-                mypc.FileSystem.CopyFile(ruta_imagen, @"C:\Users\JP_51\Documents\StardewValley\Items\" + txt_Item.Text.ToString() + ".jpg");
-                MessageBox.Show("Moviendo archivo desde " + ruta_imagen + " A " + @"C:\Users\JP_51\Documents\StardewValley\Items\" + txt_Item.Text.ToString() + ".jpg");
+                mypc.FileSystem.CopyFile(ruta_imagen, @"C:\Users\JP_51\Documents\StardewValley\Items\" + txt_Item.Text.ToString() + ".png");
+                MessageBox.Show("Moviendo archivo desde " + ruta_imagen + " A " + @"C:\Users\JP_51\Documents\StardewValley\Items\" + txt_Item.Text.ToString() + ".png");
             }
            
 

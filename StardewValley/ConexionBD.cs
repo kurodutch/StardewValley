@@ -23,7 +23,7 @@ namespace StardewValley
 
         }
         
-        public void Abrir()
+        public void Abrir() 
         {
             try
             {
