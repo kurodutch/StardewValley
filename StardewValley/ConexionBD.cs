@@ -41,7 +41,6 @@ namespace StardewValley
         {
             conexion.Close();
 
-
         }
 
     }

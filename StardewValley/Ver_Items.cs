@@ -49,29 +49,11 @@ namespace StardewValley
 
             SqlCommand comando = new SqlCommand(cadena, conexion.conexion);
 
-            //CODIGO PARA LLENAR UNA GRID CON LOS DATOS DE LOS ITMES
-            ////////SqlDataAdapter adaptador = new SqlDataAdapter(comando);
-            ////////DataTable tabla = new DataTable();
-            ////////adaptador.Fill(tabla);
-            ////////dataGridView1.DataSource = tabla;
-
-            //MessageBox.Show(tabla.ToString());
 
 
             SqlDataReader reader = comando.ExecuteReader();
 
            
-            //Panel panel1 = new Panel();
-            //TextBox txt = new TextBox();
-            //txt.Name = "txt" + contador;
-            //txt.Width = Convert.ToInt32("90");
-            //txt.Height = Convert.ToInt32("12");
-            //txt.Top = Convert.ToInt32("0");
-            //txt.Left = Convert.ToInt32("25");
-            //panel1.Controls.Add(txt);
-            //contador++;
-            //MessageBox.Show(txt.Name);
-
 
             while (reader.Read())
             {
@@ -123,7 +105,7 @@ namespace StardewValley
                     pbox.BorderStyle = BorderStyle.Fixed3D;
                     panel1.Controls.Add(pbox);
 
-                    altura += 20;
+                    //altura += 20;
                     topizq += 60;
 
                     pbox.Load(ListaImagenes[contador]);
@@ -168,7 +150,7 @@ namespace StardewValley
                     pbox.BorderStyle = BorderStyle.Fixed3D;
                     panel1.Controls.Add(pbox);
 
-                    altura += 20;
+                    //altura += 20;
                     topder += 60;
 
                     pbox.Load(ListaImagenes[contador]);
@@ -236,28 +218,35 @@ namespace StardewValley
             //tabla
             //dataGridView1.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader);
 
-           
-            SqlDataAdapter adaptador = new SqlDataAdapter(comando);
-            DataTable tabla = new DataTable();
-            adaptador.Fill(tabla);
 
-            cmbox_Filtrar.ValueMember = "IMAGEN_ITEM";
-            cmbox_Filtrar.DisplayMember = "NOMBRE_ITEM";
-            cmbox_Filtrar.DataSource = tabla;
+            //SqlDataAdapter adaptador = new SqlDataAdapter(comando);
+            //DataTable tabla = new DataTable();
+            //adaptador.Fill(tabla);
 
-            AutoCompleteStringCollection coleccion = new AutoCompleteStringCollection();
-            foreach (DataRow row in tabla.Rows)
-            {
-                coleccion.Add(Convert.ToString(row["NOMBRE_ITEM"]));
-            }
-            cmbox_Filtrar.AutoCompleteCustomSource = coleccion;
-            cmbox_Filtrar.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-            cmbox_Filtrar.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            //cmbox_Filtrar.ValueMember = "IMAGEN_ITEM";
+            //cmbox_Filtrar.DisplayMember = "NOMBRE_ITEM";
+            //cmbox_Filtrar.DataSource = tabla;
+
+            //AutoCompleteStringCollection coleccion = new AutoCompleteStringCollection();
+            //foreach (DataRow row in tabla.Rows)
+            //{
+            //    coleccion.Add(Convert.ToString(row["NOMBRE_ITEM"]));
+            //}
+            //cmbox_Filtrar.AutoCompleteCustomSource = coleccion;
+            //cmbox_Filtrar.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            //cmbox_Filtrar.AutoCompleteSource = AutoCompleteSource.CustomSource;
 
 
+            Metodos.CargarTabla(comando);
+            
 
+            //CargarTabla(comando);
+            AutoCompleteStringCollection coleccion2 = new AutoCompleteStringCollection();
+            coleccion2 = Metodos.CargarAutoComplete("Items");
             //txt_Filtrar.
-            txt_Filtro.AutoCompleteCustomSource = coleccion;
+            
+
+            txt_Filtro.AutoCompleteCustomSource = coleccion2;
             txt_Filtro.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             txt_Filtro.AutoCompleteSource = AutoCompleteSource.CustomSource;
 
@@ -278,29 +267,35 @@ namespace StardewValley
 
         }
 
-        private DataTable CargarTabla(SqlCommand comando)
-        {
-            DataTable tabla = new DataTable();
-            SqlDataAdapter adaptador = new SqlDataAdapter(comando);
-            
-            adaptador.Fill(tabla);
-            return tabla;
-
-        }
-
-
-
-        //public static AutoCompleteStringCollection LoadAutoComplete()
+        //public  static DataTable CargarTabla(SqlCommand comando)
         //{
-        //    DataTable tabla = CargarTabla(comando);
+        //    DataTable tabla = new DataTable();
+        //    SqlDataAdapter adaptador = new SqlDataAdapter(comando);
             
-        //    AutoCompleteStringCollection stringCol = new AutoCompleteStringCollection();
+        //    adaptador.Fill(tabla);
+        //    return tabla;
+
+        //}
+
+
+
+        //public static AutoCompleteStringCollection CargarAutoComplete()
+        //{
+        //    ConexionBD conexion = new ConexionBD();
+        //    conexion.Abrir();
+        //    string cadena = "SELECT NOMBRE_ITEM, IMAGEN_ITEM from Items order by NOMBRE_ITEM ASC";
+
+        //    SqlCommand  comando = new SqlCommand(cadena, conexion.conexion);
+
+        //    DataTable tabla = CargarTabla(comando);
+
+        //    AutoCompleteStringCollection coleccion2 = new AutoCompleteStringCollection();
         //    foreach (DataRow row in tabla.Rows)
         //    {
-        //        stringCol.Add(Convert.ToString(row["NOMBRE_ITEM"]));
+        //        coleccion2.Add(Convert.ToString(row["NOMBRE_ITEM"]));
         //    }
 
-        //    return stringCol;
+        //    return coleccion2;
 
         //}
 
@@ -480,9 +475,21 @@ namespace StardewValley
         private void txt_Filtro_Leave(object sender, EventArgs e)
         {
 
-            txt_Filtrar.Text = txt_Filtro.ToString();
+            //txt_Filtrar.Text = txt_Filtro.ToString();
             //pbox_Filtrar.Load(cmbox_Filtrar.SelectedValue.ToString());
-            pbox_Filtrar.Load(@"C: \Users\JP_51\Documents\StardewValley\Items\" + txt_Filtro.Text.ToString() + ".png");
+            //pbox_Filtrar.Load(@"C: \Users\JP_51\Documents\StardewValley\Items\" + txt_Filtro.Text.ToString() + ".png");
+
+            //MessageBox.Show("perdiendo el foco");
+
+            try
+            {
+                pbox_Filtrar.Load(@"C: \Users\JP_51\Documents\StardewValley\Items\" + txt_Filtro.Text.ToString() + ".png");
+                MessageBox.Show("perdiendo el foco");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void txt_Filtro_MouseClick(object sender, MouseEventArgs e)

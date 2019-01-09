@@ -74,17 +74,14 @@ namespace StardewValley
             string StardewValleyItems = @"C:\Users\JP_51\Documents\StardewValley\Items";
             try
             {
-                if (Directory.Exists(StardewValleyItems))
-                {
-                    //MessageBox.Show("La carpeta  ya existe");
-                }
-                else
+                if (!Directory.Exists(StardewValleyItems))
                 {
                     DialogResult Resultado;
                     Resultado = MessageBox.Show("La Carpeta Items no existe. Creando", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     //MessageBox.Show("La carpeta no existe. Creando.");
                     Directory.CreateDirectory(StardewValleyItems);
                 }
+                
             }
             catch (Exception ex)
             {

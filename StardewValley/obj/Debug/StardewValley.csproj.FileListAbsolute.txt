@@ -31,3 +31,6 @@ C:\Users\JP_51\Documents\GitHub\StardewValley\StardewValley\obj\Debug\StardewVal
 C:\Users\JP_51\Documents\GitHub\StardewValley\StardewValley\obj\Debug\StardewValley.exe
 C:\Users\JP_51\Documents\GitHub\StardewValley\StardewValley\obj\Debug\StardewValley.pdb
 C:\Users\JP_51\Documents\GitHub\StardewValley\StardewValley\obj\Debug\StardewValley.Agregar_Habitantes.resources
+C:\Users\JP_51\Documents\GitHub\StardewValley\StardewValley\obj\Debug\StardewValley.Ver_Habitantes.resources
+C:\Users\JP_51\Documents\GitHub\StardewValley\StardewValley\obj\Debug\StardewValley.Agregar_Gustos.resources
+C:\Users\JP_51\Documents\GitHub\StardewValley\StardewValley\obj\Debug\StardewValley.Ver_Gustos.resources

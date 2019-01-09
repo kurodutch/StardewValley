@@ -31,11 +31,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txt_Filtro = new System.Windows.Forms.TextBox();
+            this.cmbox_Filtrar = new System.Windows.Forms.ComboBox();
+            this.txt_Filtrar = new System.Windows.Forms.TextBox();
             this.btn_siguiente = new System.Windows.Forms.Button();
             this.btn_atrás = new System.Windows.Forms.Button();
             this.pbox_Filtrar = new System.Windows.Forms.PictureBox();
-            this.cmbox_Filtrar = new System.Windows.Forms.ComboBox();
-            this.txt_Filtrar = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbox_Filtrar)).BeginInit();
             this.SuspendLayout();
@@ -72,36 +72,6 @@
             this.txt_Filtro.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_Filtro_KeyDown);
             this.txt_Filtro.Leave += new System.EventHandler(this.txt_Filtro_Leave);
             // 
-            // btn_siguiente
-            // 
-            this.btn_siguiente.Image = global::StardewValley.Properties.Resources.flecha_derecha;
-            this.btn_siguiente.Location = new System.Drawing.Point(307, 182);
-            this.btn_siguiente.Name = "btn_siguiente";
-            this.btn_siguiente.Size = new System.Drawing.Size(100, 49);
-            this.btn_siguiente.TabIndex = 4;
-            this.btn_siguiente.Text = "Siguiente";
-            this.btn_siguiente.UseVisualStyleBackColor = true;
-            this.btn_siguiente.Click += new System.EventHandler(this.btn_siguiente_Click);
-            this.btn_siguiente.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btn_siguiente_KeyDown);
-            // 
-            // btn_atrás
-            // 
-            this.btn_atrás.Location = new System.Drawing.Point(112, 182);
-            this.btn_atrás.Name = "btn_atrás";
-            this.btn_atrás.Size = new System.Drawing.Size(100, 49);
-            this.btn_atrás.TabIndex = 3;
-            this.btn_atrás.Text = "Atrás";
-            this.btn_atrás.UseVisualStyleBackColor = true;
-            this.btn_atrás.Click += new System.EventHandler(this.btn_atrás_Click);
-            // 
-            // pbox_Filtrar
-            // 
-            this.pbox_Filtrar.Location = new System.Drawing.Point(99, 68);
-            this.pbox_Filtrar.Name = "pbox_Filtrar";
-            this.pbox_Filtrar.Size = new System.Drawing.Size(102, 68);
-            this.pbox_Filtrar.TabIndex = 2;
-            this.pbox_Filtrar.TabStop = false;
-            // 
             // cmbox_Filtrar
             // 
             this.cmbox_Filtrar.FormattingEnabled = true;
@@ -118,12 +88,41 @@
             this.txt_Filtrar.Size = new System.Drawing.Size(156, 20);
             this.txt_Filtrar.TabIndex = 0;
             // 
+            // btn_siguiente
+            // 
+            this.btn_siguiente.Image = global::StardewValley.Properties.Resources.Entypo_e766_0__32;
+            this.btn_siguiente.Location = new System.Drawing.Point(307, 182);
+            this.btn_siguiente.Name = "btn_siguiente";
+            this.btn_siguiente.Size = new System.Drawing.Size(100, 49);
+            this.btn_siguiente.TabIndex = 4;
+            this.btn_siguiente.UseVisualStyleBackColor = true;
+            this.btn_siguiente.Click += new System.EventHandler(this.btn_siguiente_Click);
+            this.btn_siguiente.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btn_siguiente_KeyDown);
+            // 
+            // btn_atrás
+            // 
+            this.btn_atrás.Image = global::StardewValley.Properties.Resources.Entypo_e765_0__32;
+            this.btn_atrás.Location = new System.Drawing.Point(112, 182);
+            this.btn_atrás.Name = "btn_atrás";
+            this.btn_atrás.Size = new System.Drawing.Size(100, 49);
+            this.btn_atrás.TabIndex = 3;
+            this.btn_atrás.UseVisualStyleBackColor = true;
+            this.btn_atrás.Click += new System.EventHandler(this.btn_atrás_Click);
+            // 
+            // pbox_Filtrar
+            // 
+            this.pbox_Filtrar.Location = new System.Drawing.Point(99, 68);
+            this.pbox_Filtrar.Name = "pbox_Filtrar";
+            this.pbox_Filtrar.Size = new System.Drawing.Size(102, 68);
+            this.pbox_Filtrar.TabIndex = 2;
+            this.pbox_Filtrar.TabStop = false;
+            // 
             // Ver_Items
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(557, 1026);
+            this.ClientSize = new System.Drawing.Size(557, 1060);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Ver_Items";

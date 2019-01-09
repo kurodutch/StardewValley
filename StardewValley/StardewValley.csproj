@@ -65,6 +65,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Agregar_Gustos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agregar_Gustos.Designer.cs">
+      <DependentUpon>Agregar_Gustos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Agregar_Habitantes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,19 @@
     <Compile Include="Menu_Principal.Designer.cs">
       <DependentUpon>Menu_Principal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Metodos.cs" />
+    <Compile Include="Ver_Gustos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ver_Gustos.Designer.cs">
+      <DependentUpon>Ver_Gustos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ver_Habitantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ver_Habitantes.Designer.cs">
+      <DependentUpon>Ver_Habitantes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ver_Items.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +111,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Agregar_Gustos.resx">
+      <DependentUpon>Agregar_Gustos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Agregar_Habitantes.resx">
       <DependentUpon>Agregar_Habitantes.cs</DependentUpon>
     </EmbeddedResource>
@@ -100,6 +122,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menu_Principal.resx">
       <DependentUpon>Menu_Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ver_Gustos.resx">
+      <DependentUpon>Ver_Gustos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ver_Habitantes.resx">
+      <DependentUpon>Ver_Habitantes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ver_Items.resx">
       <DependentUpon>Ver_Items.cs</DependentUpon>
@@ -142,6 +170,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\flecha-derecha.png" />
+    <None Include="Resources\Entypo_e766%280%29_32.png" />
+    <None Include="Resources\Entypo_e765%280%29_32.png" />
     <Content Include="StardewValley.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

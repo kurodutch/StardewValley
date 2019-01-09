@@ -91,14 +91,14 @@
             // Agregar_Habitantes
             // 
             this.Agregar_Habitantes.Name = "Agregar_Habitantes";
-            this.Agregar_Habitantes.Size = new System.Drawing.Size(180, 22);
+            this.Agregar_Habitantes.Size = new System.Drawing.Size(176, 22);
             this.Agregar_Habitantes.Text = "Agregar Habitantes";
             this.Agregar_Habitantes.Click += new System.EventHandler(this.Agregar_Habitantes_Click);
             // 
             // Ver_Habitantes
             // 
             this.Ver_Habitantes.Name = "Ver_Habitantes";
-            this.Ver_Habitantes.Size = new System.Drawing.Size(180, 22);
+            this.Ver_Habitantes.Size = new System.Drawing.Size(176, 22);
             this.Ver_Habitantes.Text = "Ver Habitantes";
             this.Ver_Habitantes.Click += new System.EventHandler(this.toolStripMenuItem1_Click_1);
             // 
@@ -137,14 +137,16 @@
             // Agregar_Gustos
             // 
             this.Agregar_Gustos.Name = "Agregar_Gustos";
-            this.Agregar_Gustos.Size = new System.Drawing.Size(155, 22);
+            this.Agregar_Gustos.Size = new System.Drawing.Size(180, 22);
             this.Agregar_Gustos.Text = "Agregar Gustos";
+            this.Agregar_Gustos.Click += new System.EventHandler(this.Agregar_Gustos_Click);
             // 
             // Ver_Gustos
             // 
             this.Ver_Gustos.Name = "Ver_Gustos";
-            this.Ver_Gustos.Size = new System.Drawing.Size(155, 22);
+            this.Ver_Gustos.Size = new System.Drawing.Size(180, 22);
             this.Ver_Gustos.Text = "Ver Gustos";
+            this.Ver_Gustos.Click += new System.EventHandler(this.Ver_Gustos_Click);
             // 
             // txt_1
             // 

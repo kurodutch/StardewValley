@@ -109,10 +109,11 @@ namespace StardewValley
                     SqlCommand comandoInsert = new SqlCommand(rutaInsert, cn.conexion);
                     comandoInsert.Parameters.AddWithValue("@Nombre_Habitante", txt_Habitante.Text.ToString());
                     //comandoInsert.Parameters.AddWithValue("@Imagen_Item", txt_Ruta.Text.ToString());
-                    comandoInsert.Parameters.AddWithValue("@Imagen_Habitante", @"C:\Users\JP_51\Documents\StardewValley\Items\" + txt_Habitante.Text.ToString() + ".jpg");
+                    comandoInsert.Parameters.AddWithValue("@Imagen_Habitante", @"C:\Users\JP_51\Documents\StardewValley\Habitantes\" + txt_Habitante.Text.ToString() + ".png");
                     comandoInsert.ExecuteNonQuery();
                     //pbox_Imagen.Load(@"C:\Users\JP_51\Pictures\Katatonia.jpg");
                     pbox_Imagen.Image = null;
+                    txt_Habitante.Text = null;
                     MessageBox.Show("Habitante agregado con éxito.");
                 }
                 catch (Exception ex)
@@ -122,8 +123,14 @@ namespace StardewValley
 
 
                 //COPIAR LA IMAGEN A LA CARPETA DEL SV//
-                mypc.FileSystem.CopyFile(ruta_imagen, @"C:\Users\JP_51\Documents\StardewValley\Habitantes\" + txt_Habitante.Text.ToString() + ".jpg");
-                MessageBox.Show("Moviendo archivo desde " + ruta_imagen + " A " + @"C:\Users\JP_51\Documents\StardewValley\Habitantes\" + txt_Habitante.Text.ToString() + ".jpg");
+                try {
+                    mypc.FileSystem.CopyFile(ruta_imagen, @"C:\Users\JP_51\Documents\StardewValley\Habitantes\" + txt_Habitante.Text.ToString() + ".png");
+                    MessageBox.Show("Moviendo archivo desde " + ruta_imagen + " A " + @"C:\Users\JP_51\Documents\StardewValley\Habitantes\" + txt_Habitante.Text.ToString() + ".png");
+                }catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+               
             }
 
 

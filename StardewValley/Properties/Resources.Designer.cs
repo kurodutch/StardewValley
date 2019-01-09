@@ -63,6 +63,26 @@ namespace StardewValley.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Entypo_e765_0__32 {
+            get {
+                object obj = ResourceManager.GetObject("Entypo_e765(0)_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Entypo_e766_0__32 {
+            get {
+                object obj = ResourceManager.GetObject("Entypo_e766(0)_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap flecha_derecha {
             get {
                 object obj = ResourceManager.GetObject("flecha-derecha", resourceCulture);

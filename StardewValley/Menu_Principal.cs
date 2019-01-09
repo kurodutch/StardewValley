@@ -111,7 +111,8 @@ namespace StardewValley
 
         private void toolStripMenuItem1_Click_1(object sender, EventArgs e)
         {
-
+            Ver_Habitantes ver_habitantes = new Ver_Habitantes();
+            ver_habitantes.Show();
         }
 
         private void Ver_Items_Click(object sender, EventArgs e)
@@ -155,6 +156,19 @@ namespace StardewValley
         {
             Agregar_Habitantes agregar_habitantes = new Agregar_Habitantes();
             agregar_habitantes.Show();
+        }
+
+        private void Ver_Gustos_Click(object sender, EventArgs e)
+        {
+            Ver_Gustos ver_gustos = new Ver_Gustos();
+            ver_gustos.Show();
+
+        }
+
+        private void Agregar_Gustos_Click(object sender, EventArgs e)
+        {
+            Agregar_Gustos agregar_gustos = new Agregar_Gustos();
+            agregar_gustos.Show();
         }
         // C:\Users\JP_51\Documents
 
